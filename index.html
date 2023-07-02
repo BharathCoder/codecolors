@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeColors</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <h1>
+            CodeColors
+        </h1>
+    </nav>
+    <div class="container">
+        <div class="color-generator">
+            <h3>Generate a random color</h3>
+            <div class="wrapper">
+                <div class="color-display" id="color-display"></div>
+                    <div class="hex-code">
+                        <h3 data-color>Yelllow</h3>
+                        <h3 data-hex>#ffb700</h3>
+                        <button data-gen>Generate</button>
+                        <button data-copy>Copy</button>
+                    </div>
+            </div>
+        </div>
+        <div class="gradients">
+            <h3>Generate a colorful Gradient</h3>
+            <div class="wrapper">
+            <div class="grad-display" id="grad-display"></div>
+            <div class="css-code">
+                <h3 data-css>linear-gradient(45deg, #00ffea, #0044ff, #a200ff)</h3>
+                <button data-gen data-grad>Generate</button>
+                <button data-copy data-grad-copy>Copy</button>
+            </div>
+        </div>
+        </div>
+        <div class="palette">
+            <div class="item-social">
+                <a href="#">Follow on Instagram</a>
+            </div>
+            <div class="item-social">
+                <a href="https://github.com/bharathcoder">More projects on GitHub</a>
+            </div>
+            <div class="item-social">
+                HEX - <a href="https://flatuicolors.com/"> FlatUI</a> & Gradients - <a href="https://coolors.co/"> COOLORS</a>
+            </div>
+            <div class="item-social">
+                &copy; <span id="year"></span> - bharathcoder
+            </div>
+        </div>
+        <div class="promotion-ads">
+            <div class="img-ad">
+                <img src="https://i.ytimg.com/vi/QZso1Rcbshc/maxresdefault.jpg" alt="ytimg">
+            </div>
+            <div class="col">
+            <h3 class="ad-title">Valorant Gameplay</h3>
+            <a href="#" class="btn-redir">Play Now</a>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCbh0FpsZbmjaA3boPubSqe7A5mQ-nkBZ8",
+          authDomain: "codecolors-bkmhd.firebaseapp.com",
+          projectId: "codecolors-bkmhd",
+          storageBucket: "codecolors-bkmhd.appspot.com",
+          messagingSenderId: "299238138928",
+          appId: "1:299238138928:web:158e61c9d1f6c4af08f9f5",
+          measurementId: "G-TKEWKRC19C"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+<script src="index.js"></script>
+</html>
